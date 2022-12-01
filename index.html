@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🙏🙏🙏</title>
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .center {
+            cursor: pointer;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .act_button {
+            width: 150px;
+            margin: 0 auto;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <img src="main1.jpeg" alt="Paris">
+    <div class="center">
+        <button type="button" onclick="Swal.fire({
+            title: 'SAYANGGGGG',
+            text: 'maaf bangettttt yaaaaaaaa:(',
+            imageUrl: 'https://i.pinimg.com/originals/93/58/3e/93583e0cc2340a97b71024ac58a3f901.gif',
+            imageWidth: 240,
+            imageHeight: 240,
+            imageAlt: 'Custom image',
+          })">iya tika maafin</button>
+
+        <button class="act_button" onmouseover="moveHover(this)">gak mau !!!</button>
+    </div>
+    <img src="cry.jpg" style="float: left"> <img src="nangis.jpg" style="float: right">
+    <script type="text/javascript">
+        function moveHover(x){
+            const i = Math.floor(Math.random()*500)+1;
+            const j = Math.floor(Math.random()*500)+1;
+
+            x.style.position = 'absolute';
+
+            x.style.left = i+'px';
+            x.style.top = j+'px';
+        }
+    </script>
+    <script src="dist/sweetalert2.all.min.js">
+        alert
+    </script>
+</body>
+</html>
